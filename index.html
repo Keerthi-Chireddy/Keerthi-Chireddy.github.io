@@ -56,8 +56,18 @@
             cursor: pointer;
         }
 
+        button:hover {
+            background-color: #45a049;
+        }
+
         input {
             padding: 10px;
+        }
+
+        /* Added style for better contrast */
+        label {
+            color: white;
+            margin-right: 10px;
         }
     </style>
 </head>
@@ -79,8 +89,9 @@
         <h2>Welcome to Our Website</h2>
         <p>This is a simple AI-generated website with various features. Feel free to explore!</p>
 
-        <button>Click me</button>
-        <input type="text" placeholder="Enter something...">
+        <!-- Added label for better accessibility -->
+        <label for="userInput">Enter something:</label>
+        <input type="text" id="userInput" placeholder="Enter something...">
     </section>
 
     <section>
