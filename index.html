@@ -1,48 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Grocery System</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Your Video Blog</title>
 </head>
 <body>
-    <header>
-        <h1>Grocery System</h1>
-        <!-- Navigation Bar -->
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Videos</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
 
-    <section>
-        <!-- Search and Sorting Filters -->
-        <div class="filters">
-            <input type="text" placeholder="Search...">
-            <select>
-                <option value="price">Sort by Price</option>
-                <option value="name">Sort by Name</option>
-            </select>
-        </div>
+  <!-- Header -->
+  <header>
+    <h1>Your Video Blog</h1>
+    <p>Welcome to the best video blog on the internet!</p>
+  </header>
 
-        <!-- Product Listing -->
-        <div class="product">
-            <img src="product1.jpg" alt="Product 1">
-            <h2>Product 1</h2>
-            <p>Description of Product 1.</p>
-            <button>Add to Cart</button>
-        </div>
+  <!-- Content Area -->
+  <section id="content">
+    <!-- Video Section -->
+    <div class="video">
+      <h2>Featured Video</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
+    </div>
 
-        <!-- Repeat similar blocks for more products -->
+    <!-- Image Section -->
+    <div class="image">
+      <h2>Latest Images</h2>
+      <img src="image1.jpg" alt="Image 1">
+      <img src="image2.jpg" alt="Image 2">
+    </div>
+  </section>
 
-    </section>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 Your Video Blog. All rights reserved.</p>
+  </footer>
 
-    <footer>
-        <p>&copy; 2023 Grocery System. All rights reserved.</p>
-    </footer>
+  <!-- JavaScript (for any dynamic behavior) -->
+  <script src="script.js"></script>
 </body>
 </html>
