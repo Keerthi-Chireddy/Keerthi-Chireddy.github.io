@@ -1,113 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your AI-Generated Website</title>
-    <style>
-        body {
-            background-image: url('background-image.jpg'); /* Replace with your image URL */
-            background-size: cover;
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-
-        header {
-            background-color: #333;
-            color: white;
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-around;
-            background-color: #444;
-            padding: 10px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-        }
-
-        section {
-            padding: 20px;
-        }
-
-        video {
-            width: 100%;
-            height: auto;
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 10px;
-            text-align: center;
-        }
-
-        button {
-            padding: 10px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #45a049;
-        }
-
-        input {
-            padding: 10px;
-        }
-
-        /* Modified style for better contrast */
-        label {
-            color: #ffffff; /* White color for text */
-            background-color: #333; /* Dark background color for better contrast */
-            padding: 5px 10px; /* Adjust padding for better appearance */
-            margin-right: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <title>Grocery System</title>
 </head>
-
 <body>
-
     <header>
-        <h1>Your Website</h1>
+        <h1>Grocery System</h1>
+        <!-- Navigation Bar -->
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
-    </nav>
-
     <section>
-        <h2>Welcome to Our Website</h2>
-        <p>This is a simple AI-generated website with various features. Feel free to explore!</p>
+        <!-- Search and Sorting Filters -->
+        <div class="filters">
+            <input type="text" placeholder="Search...">
+            <select>
+                <option value="price">Sort by Price</option>
+                <option value="name">Sort by Name</option>
+            </select>
+        </div>
 
-        <!-- Modified label style for better contrast -->
-        <label for="userInput">Enter something:</label>
-        <input type="text" id="userInput" placeholder="Enter something...">
-    </section>
+        <!-- Product Listing -->
+        <div class="product">
+            <img src="product1.jpg" alt="Product 1">
+            <h2>Product 1</h2>
+            <p>Description of Product 1.</p>
+            <button>Add to Cart</button>
+        </div>
 
-    <section>
-        <h2>Featured Video</h2>
-        <video controls>
-            <source src="your-video.mp4" type="video/mp4"> <!-- Replace with your video URL -->
-            Your browser does not support the video tag.
-        </video>
+        <!-- Repeat similar blocks for more products -->
+
     </section>
 
     <footer>
-        <p>&copy; 2023 Your Website. All rights reserved.</p>
+        <p>&copy; 2023 Grocery System. All rights reserved.</p>
     </footer>
-
 </body>
-
 </html>
